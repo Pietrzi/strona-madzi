@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    background-color: aquamarine;
+}
+
+.sekcja {
+    height: calc(100% - 54px);
+    width: 100%;
+}
+
+#raz {
+    background-color: blue;
+}
+
+#dwa {
+    background-color: blueviolet;
+}
+
+#trzy {
+    background-color: cadetblue;
+}
+
+.nodisplay {
+    display: none;
+}
+
+.display {
+    display: block;
+}
