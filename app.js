@@ -1,4 +1,4 @@
-const nextImageDelay = 3000;
+const nextImageDelay = 2000;
 let currentImage = 0;
 
 // select menu buttons
@@ -35,15 +35,35 @@ const clickSecond = () => {
 
 slideshowImages[currentImage].style.display = "block";
 
-const nextAutoImage = () => {
+setTimeout(() => {
+    slideshowImages[currentImage].style.transform = "translateX(-100%)";
+    slideshowImages[currentImage + 1].classList.add("slideshow__img__next");
+    slideshowImages[currentImage + 1].classList.remove("slideshow__img");
+    slideshowImages[currentImage + 1].style.display = "block";
+    //slideshowImages[currentImage + 1].style.transform = "translateX(0)";
+    
+}, 1000)
+
+setTimeout(() => {
     slideshowImages[currentImage].style.display = "none";
-    currentImage = (currentImage + 1) % slideshowImages.length;
-    slideshowImages[currentImage].style.display = "block";
-}
+}, 2000)
 
-const autoPlayInterval = () => setInterval(nextAutoImage, nextImageDelay);
+// const nextAutoImage = () => {
+//     let tempNextImg = currentImage + 1;
+//     slideshowImages[tempNextImg].style.display = "block";
+//     slideshowImages[tempNextImg].style.transform = "translateX(100%)";
+//     slideshowImages[currentImage].style.transform = "translateX(-100%)";
+//     slideshowImages[tempNextImg].style.transform = "translateX(0)";
+//     setTimeout(() => {
+//         slideshowImages[currentImage].style.display = "none";
+//     }, 1000)
+//     currentImage = (currentImage + 1) % slideshowImages.length;
+//     //slideshowImages[currentImage].style.display = "block";
+// }
 
-autoPlayInterval();
+// const autoPlayInterval = () => setInterval(nextAutoImage, nextImageDelay);
+
+// autoPlayInterval();
 
 
 // listeners

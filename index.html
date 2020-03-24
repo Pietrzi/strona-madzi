@@ -21,15 +21,23 @@
         </ul>
     </nav>
     <div id="raz" class="sekcja display">
-        <div class="slideshow">
-            <img src="images/1.jpg" alt="Madzia" class="slideshow__img">
-            <img src="images/2.jpg" alt="Madzia" class="slideshow__img">
-            <img src="images/3.jpg" alt="Madzia" class="slideshow__img">
+        <button class="left-button">
+            <div class="left-button-image"></div>
+        </button>
+        <div class="slideshow-container">
+            <div class="slideshow">
+                <img src="images/1.jpg" alt="Madzia" class="slideshow__img current-slide">
+                <img src="images/2.jpg" alt="Madzia" class="slideshow__img">
+                <img src="images/3.jpg" alt="Madzia" class="slideshow__img">
+            </div>
         </div>
+        <button class="right-button">
+            <div class="right-button-image"></div>
+        </button>
     </div>
     <div id="dwa" class="sekcja nodisplay">dwa</div>
     <div id="trzy" class="sekcja nodisplay">trzy</div>
     
-    <script src="app.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>
