@@ -20,7 +20,6 @@ nav {
 }
 
 #raz {
-    background-color: blue;
 }
 
 #dwa {
@@ -37,4 +36,21 @@ nav {
 
 .display {
     display: block;
+}
+
+.slideshow {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slideshow__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
 }

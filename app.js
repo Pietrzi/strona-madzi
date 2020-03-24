@@ -1,8 +1,21 @@
-firstButton = document.querySelector('#pierwszy');
-secondButton = document.querySelector('#drugi');
+const nextImageDelay = 3000;
+let currentImage = 0;
 
-firstSection = document.querySelector('#raz');
-secondSection = document.querySelector('#dwa');
+// select menu buttons
+
+const firstButton = document.querySelector('#pierwszy');
+const secondButton = document.querySelector('#drugi');
+
+// select sections
+
+const firstSection = document.querySelector('#raz');
+const secondSection = document.querySelector('#dwa');
+
+// select images
+
+const slideshowImages = document.querySelectorAll('.slideshow__img');
+
+// change sections functions
 
 const clickFirst = () => {
     firstSection.classList.remove("nodisplay");
@@ -18,7 +31,24 @@ const clickSecond = () => {
     firstSection.classList.add("nodisplay");
 }
 
+// slideshow logic
+
+slideshowImages[currentImage].style.display = "block";
+
+const nextAutoImage = () => {
+    slideshowImages[currentImage].style.display = "none";
+    currentImage = (currentImage + 1) % slideshowImages.length;
+    slideshowImages[currentImage].style.display = "block";
+}
+
+const autoPlayInterval = () => setInterval(nextAutoImage, nextImageDelay);
+
+autoPlayInterval();
+
+
+// listeners
+
 firstButton.addEventListener('click', clickFirst);
 secondButton.addEventListener('click', clickSecond);
 
-console.log(firstButton)
+//console.log(slideshowImages)
