@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madzia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <button id="pierwszy">raz</button>
+            </li>
+            <li>
+                <button id="drugi">dwa</button>
+            </li>
+            <li>
+                <button id="trzeci">trzy</button>
+            </li>
+        </ul>
+    </nav>
+    <div id="raz" class="sekcja display">
+        <button class="left-button">
+            <div class="left-button-image"></div>
+        </button>
+        <div class="slideshow-container">
+            <div class="slideshow">
+                <img src="images/1.jpg" alt="Madzia" class="slideshow__img current-slide">
+                <img src="images/2.jpg" alt="Madzia" class="slideshow__img">
+                <img src="images/3.jpg" alt="Madzia" class="slideshow__img">
+            </div>
+        </div>
+        <button class="right-button">
+            <div class="right-button-image"></div>
+        </button>
+    </div>
+    <div id="dwa" class="sekcja nodisplay">dwa</div>
+    <div id="trzy" class="sekcja nodisplay">trzy</div>
+    
+    <script src="carousel.js"></script>
+</body>
+</html>
