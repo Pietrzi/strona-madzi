@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madzia</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <nav>
-        <ul>
-            <li>
-                <button id="pierwszy">raz</button>
-            </li>
-            <li>
-                <button id="drugi">dwa</button>
-            </li>
-            <li>
-                <button id="trzeci">trzy</button>
-            </li>
-        </ul>
+        <div class="nav-center">
+            <div calss="name-section">
+                <p class="name">Magda Majtyka</p>
+                <p class="description">Tańczy, śpiewa, recytuje!</p>
+            </div>
+            <ul class="menu-options">
+                <li>
+                    <button id="pierwszy">Home</button>
+                </li>
+                <li>
+                    <button id="drugi">Biografia</button>
+                </li>
+                <li>
+                    <button id="trzeci">Galeria</button>
+                </li>
+                <li>
+                    <button id="czwarty">Filmy</button>
+                </li>
+            </ul>
+        </div>
     </nav>
     <div id="raz" class="sekcja display">
-        <button class="left-button">
-            <div class="left-button-image"></div>
-        </button>
         <div class="slideshow-container">
             <div class="slideshow">
                 <img src="images/1.jpg" alt="Madzia" class="slideshow__img current-slide">
@@ -31,9 +38,6 @@
                 <img src="images/3.jpg" alt="Madzia" class="slideshow__img">
             </div>
         </div>
-        <button class="right-button">
-            <div class="right-button-image"></div>
-        </button>
     </div>
     <div id="dwa" class="sekcja nodisplay">dwa</div>
     <div id="trzy" class="sekcja nodisplay">trzy</div>

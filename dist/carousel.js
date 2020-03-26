@@ -13,7 +13,7 @@ const clickFirst = () => {
     firstSection.classList.add("display");
     secondSection.classList.remove("display");
     secondSection.classList.add("nodisplay");
-    autoPlayInterval();
+    //autoPlayInterval();
 }
 
 const clickSecond = () => {
@@ -59,7 +59,7 @@ const autoPlayInterval = () => setInterval(nextAutoImage, 2000);
 
 
 const prevSlideMove = () => {
-    stopInterval();
+    //stopInterval();
     const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
     const amountToMove = prevSlide.style.left;
@@ -67,10 +67,11 @@ const prevSlideMove = () => {
     track.style.transform = 'translateX(' + amountToMove + ')';
     currentSlide.classList.remove('current-slide');
     prevSlide.classList.add('current-slide');
+    console.log('prev')
 }
 
 const nextSlideMove = () => {
-    stopInterval();
+    //stopInterval();
     const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
     const amountToMove = nextSlide.style.left;
@@ -78,6 +79,7 @@ const nextSlideMove = () => {
     track.style.transform = 'translateX(-' + amountToMove + ')';
     currentSlide.classList.remove('current-slide');
     nextSlide.classList.add('current-slide');
+    console.log('next')
 }
 
 firstButton.addEventListener('click', clickFirst);
