@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madzia</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -16,32 +18,65 @@
             </div>
             <ul class="menu-options">
                 <li>
-                    <button id="pierwszy">Home</button>
+                    <button class="menu-item active-item" id="pierwszy">Home</button>
                 </li>
                 <li>
-                    <button id="drugi">Biografia</button>
+                    <button class="menu-item " id="drugi">Biografia</button>
                 </li>
                 <li>
-                    <button id="trzeci">Galeria</button>
+                    <button class="menu-item " id="trzeci">Galeria</button>
                 </li>
                 <li>
-                    <button id="czwarty">Filmy</button>
+                    <button class="menu-item " id="czwarty">Filmy</button>
                 </li>
             </ul>
         </div>
     </nav>
     <div id="raz" class="sekcja display">
-        <div class="slideshow-container">
-            <div class="slideshow">
-                <img src="images/1.jpg" alt="Madzia" class="slideshow__img current-slide">
-                <img src="images/2.jpg" alt="Madzia" class="slideshow__img">
-                <img src="images/3.jpg" alt="Madzia" class="slideshow__img">
+        <section class="slideshow-container">
+            <!-- <div class="slideshow"> -->
+                <!-- <img src="images/madzia1.jpg" alt="Madzia" class="slideshow__img current-slide">
+                <img src="images/madzia2.jpg" alt="Madzia" class="slideshow__img">
+                <img src="images/madzia3.png" alt="Madzia" class="slideshow__img">
+                <img src="images/madzia4.jpg" alt="Madzia" class="slideshow__img"> -->
+                <div class="img-holder"><img src="images/madzia1.jpg" alt="Madzia"></div>
+                <div class="img-holder"><img src="images/madzia2.jpg" alt="Madzia"></div>
+                <div class="img-holder"><img src="images/madzia3.png" alt="Madzia"></div>
+                <div class="img-holder"><img src="images/madzia4.jpg" alt="Madzia"></div>
+            <!-- </div> -->
+        </section>
+        <footer>
+            <div class="socials-box">
+                <div class="social-icon facebook"></div>
+                <div class="social-icon insta"></div>
+                <div class="social-icon vimeo"></div>
             </div>
-        </div>
+        </footer>
     </div>
     <div id="dwa" class="sekcja nodisplay">dwa</div>
     <div id="trzy" class="sekcja nodisplay">trzy</div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slideshow-container').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                pauseOnHover: true,
+                speed: 1500
+            });
+        });
+        
+    </script>
     
-    <script src="carousel.js"></script>
+    <!-- <script src="carousel.js"></script> -->
 </body>
 </html>
