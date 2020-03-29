@@ -17,10 +17,13 @@ nav {
     height: 120px;
     width: 100%;
     color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .nav-center {
-    width: 70%;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -72,7 +75,7 @@ nav {
 }
 
 .sekcja {
-    height: calc(100% - 120px);
+    height: 100%;
     width: 100%;
 }
 
@@ -97,17 +100,70 @@ nav {
 }
 
 .slideshow-container {
-    width: 70%;
-    height: 80%;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    /* margin: 0 auto; */
     position: relative;
     overflow: hidden;
+}
+
+.img-holder {
+    width: 100%;
+    height: 100%;
+}
+
+.one {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.two {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.three {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.four {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.five {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe5.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.six {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe6.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    /* object-fit: fill; */
 }
 
 /* .slick-next {
@@ -187,11 +243,22 @@ img {
 }
 
 footer {
-    width: 70%;
+    width: 100%;
     height: 80px;
+    /* margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; */
+    position: fixed;
+    bottom: 0;
+}
+
+.div-center {
+    width: 90%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .socials-box {
