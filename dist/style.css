@@ -107,6 +107,59 @@ nav {
     overflow: hidden;
 }
 
+.img-holder {
+    width: 100%;
+    height: 100%;
+}
+
+.one {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.two {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.three {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.four {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.five {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe5.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.six {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/nowe6.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 img {
     width: 100%;
     height: 100%;
