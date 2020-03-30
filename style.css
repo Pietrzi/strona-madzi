@@ -74,21 +74,21 @@ nav {
     color: #99e6ff;
 }
 
-.sekcja {
+.section {
     height: 100%;
     width: 100%;
+    color: white;
+    display: none;
 }
 
-#raz {
+#slider-section {
     position: relative;
 }
 
-#dwa {
-    background-color: blueviolet;
+#biography-section {
 }
 
-#trzy {
-    background-color: cadetblue;
+#gallery-section {
 }
 
 .nodisplay {
