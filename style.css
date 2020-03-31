@@ -1,9 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 body {
     margin: 0;
     padding: 0;
@@ -70,6 +64,10 @@ nav {
     color: #99e6ff;
 }
 
+.menu-item:focus {
+    outline: 0;
+}
+
 .active-item {
     color: #99e6ff;
 }
@@ -81,17 +79,6 @@ nav {
     display: none;
 }
 
-#slider-section {
-    position: relative;
-}
-
-#biography-section {
-    background: none;
-}
-
-#gallery-section {
-    background: none;
-}
 
 .nodisplay {
     display: none;
@@ -104,7 +91,6 @@ nav {
 .slideshow-container {
     width: 100%;
     height: 100%;
-    /* margin: 0 auto; */
     position: relative;
     overflow: hidden;
 }
@@ -168,80 +154,20 @@ img {
     /* object-fit: fill; */
 }
 
-/* .slick-next {
-    left: -40px;
-    z-index: 100;
-} */
 
-/* .slideshow {
+
+.film-container {
+    width: 70%;
+    margin: 200px auto 0;
+    max-width: 800px;
+}
+
+video {
     width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 0.5s ease-in-out;
-} */
-
-.slideshow__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* display: none; */
-    /* transform: translateX(0); */
-    transition: transform 1s ease-in-out;
 }
 
-.slideshow__img__next {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-    animation-name: toLeft;
-    animation-duration: 1s;
-    transform: translateX(100%);
-
-    @keyframes toLeft {
-        from {transform: translateX(100%)};
-        to {transform: translateX(0)}
-    }
-    /* transform: translateX(100%); */
-    /* transition: transform 1s ease-in-out; */
-}
-
-.left-button {
-    position: absolute;
-    top: 40%;
-    left: 20px;
-    cursor: pointer;
-}
-
-.right-button {
-    position: absolute;
-    top: 40%;
-    right: 20px;
-    cursor: pointer;
-}
-
-.left-button-image {
-    height: 40px;
-    width: 40px;
-    background-image: url('./images/left.png');
-    background-position: center;
-    background-size: cover;
-    background-color: black;
-}
-
-.right-button-image {
-    height: 40px;
-    width: 40px;
-    background-image: url('./images/right.png');
-    background-position: center;
-    background-size: cover;
-    background-color: black;
+video:focus {
+    outline: 0;
 }
 
 footer {
