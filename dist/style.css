@@ -24,6 +24,61 @@ nav {
     height: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    text-transform: uppercase;
+}
+
+.social-holder {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facebook {
+    width: 40px;
+    height: 40px;
+    background-image: url('./images/facebook-new.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.instagram {
+    width: 40px;
+    height: 40px;
+    background-image: url('./images/instagram-new.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.home-content {
+    position: fixed;
+    top: 150px;
+    left: 10%;
+    z-index: 2;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    color: red;
+    font-size: 24px;
+    letter-spacing: 2px;
 }
 
 video {
