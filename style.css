@@ -15,7 +15,7 @@ nav {
     left: 0;
     width: 100vw;
     height: 100px;
-    z-index: 2;
+    z-index: 5;
     color: white;
 }
 
@@ -70,9 +70,21 @@ li:hover {
     background-size: cover;
 }
 
-.home-section {
-    /* display: none; */
+.red-active {
+    color: red;
 }
+
+.section {
+    z-index: 3;
+    display: none;
+    color: white;
+}
+
+.display {
+    display: block;
+}
+
+/* home */
 
 .home-content {
     position: relative;
@@ -108,3 +120,5 @@ video {
     min-height: 100%;
     transform: translateX(calc((100% - 100vw) / 2));
 }
+
+/* demo */
