@@ -30,13 +30,21 @@ nav {
 
 ul {
     list-style-type: none;
-    width: 500px;
+    width: 550px;
     display: flex;
     justify-content: space-between;
 }
 
 li {
     text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+li:hover {
+    cursor: pointer;
+    color: gray;
 }
 
 .social-holder {
@@ -62,17 +70,28 @@ li {
     background-size: cover;
 }
 
+.home-section {
+    /* display: none; */
+}
+
 .home-content {
-    position: fixed;
+    position: relative;
     top: 150px;
-    left: 10%;
+    width: 90%;
+    margin: 0 auto;
     z-index: 2;
 }
 
-h1 {
+.home-title {
     color: white;
-    font-size: 48px;
+    font-size: 56px;
     font-weight: 700;
+    margin: 0;
+}
+
+.surname {
+    position: relative;
+    bottom: 20px;
 }
 
 h3 {
