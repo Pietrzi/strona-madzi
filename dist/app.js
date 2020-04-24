@@ -19,6 +19,13 @@ const goToHome = (e) => {
     biographySection.classList.remove('display');
     portfolioSection.classList.remove('display');
     contactSection.classList.remove('display');
+
+    homeButton.classList.add('red-active');
+    demoButton.classList.remove('red-active');
+    galleryButton.classList.remove('red-active');
+    biographyButton.classList.remove('red-active');
+    portfolioButton.classList.remove('red-active');
+    contactButton.classList.remove('red-active');
 }
 
 const goToDemo = (e) => {
@@ -28,6 +35,13 @@ const goToDemo = (e) => {
     biographySection.classList.remove('display');
     portfolioSection.classList.remove('display');
     contactSection.classList.remove('display');
+
+    demoButton.classList.add('red-active');
+    homeButton.classList.remove('red-active');
+    galleryButton.classList.remove('red-active');
+    biographyButton.classList.remove('red-active');
+    portfolioButton.classList.remove('red-active');
+    contactButton.classList.remove('red-active');
 }
 
 const goToGallery = (e) => {
@@ -37,6 +51,13 @@ const goToGallery = (e) => {
     biographySection.classList.remove('display');
     portfolioSection.classList.remove('display');
     contactSection.classList.remove('display');
+
+    galleryButton.classList.add('red-active');
+    homeButton.classList.remove('red-active');
+    demoButton.classList.remove('red-active');
+    biographyButton.classList.remove('red-active');
+    portfolioButton.classList.remove('red-active');
+    contactButton.classList.remove('red-active');
 }
 
 const goToBiography = (e) => {
@@ -46,6 +67,13 @@ const goToBiography = (e) => {
     gallerySection.classList.remove('display');
     portfolioSection.classList.remove('display');
     contactSection.classList.remove('display');
+
+    biographyButton.classList.add('red-active');
+    homeButton.classList.remove('red-active');
+    demoButton.classList.remove('red-active');
+    galleryButton.classList.remove('red-active');
+    portfolioButton.classList.remove('red-active');
+    contactButton.classList.remove('red-active');
 }
 
 const goToPortfolio = (e) => {
@@ -55,6 +83,13 @@ const goToPortfolio = (e) => {
     gallerySection.classList.remove('display');
     biographySection.classList.remove('display');
     contactSection.classList.remove('display');
+
+    portfolioButton.classList.add('red-active');
+    homeButton.classList.remove('red-active');
+    demoButton.classList.remove('red-active');
+    galleryButton.classList.remove('red-active');
+    biographyButton.classList.remove('red-active');
+    contactButton.classList.remove('red-active');
 }
 
 const goToContact = (e) => {
@@ -64,6 +99,13 @@ const goToContact = (e) => {
     gallerySection.classList.remove('display');
     biographySection.classList.remove('display');
     portfolioSection.classList.remove('display');
+
+    contactButton.classList.add('red-active');
+    homeButton.classList.remove('red-active');
+    demoButton.classList.remove('red-active');
+    galleryButton.classList.remove('red-active');
+    biographyButton.classList.remove('red-active');
+    portfolioButton.classList.remove('red-active');
 }
 
 homeButton.addEventListener('click', goToHome);
@@ -74,5 +116,5 @@ portfolioButton.addEventListener('click', goToPortfolio);
 contactButton.addEventListener('click', goToContact);
 
 
-console.log('click')
-console.log(e.target)
+// console.log('click')
+// console.log(e.target)
