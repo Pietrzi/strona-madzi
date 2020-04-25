@@ -1,3 +1,16 @@
+$(function() {
+    var nav = $("nav");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 40) {
+            nav.addClass("no-nav");
+        } else {
+            nav.removeClass("no-nav");
+        }
+    });
+});
+
 const homeButton = document.querySelector('#home-button');
 const demoButton = document.querySelector('#demo-button');
 const galleryButton = document.querySelector('#gallery-button');
