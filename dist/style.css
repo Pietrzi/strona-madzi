@@ -187,3 +187,35 @@ h3 {
     text-indent: 20px;
     letter-spacing: 1px;
 }
+
+/* contact */
+
+#contact-section {
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.contact-box {
+    width: 600px;
+    margin: 200px auto 0;
+}
+
+.contact-name {
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contact-info {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact-info p {
+    font-size: 30px;
+    text-align: center;
+}
