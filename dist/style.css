@@ -139,3 +139,51 @@ h3 {
 .demo-video {
     width: 800px;
 }
+
+/* biography */
+
+#biography-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bio-holder {
+    width: 950px;
+    height: 600px;
+    margin: 100px auto 0;
+    display: flex;
+}
+
+.bio-picture {
+    width: 50%;
+    height: 100%;
+}
+
+.portrait {
+    width: 90%;
+    height: 70%;
+    margin: 20px auto;
+    background-image: url('./images/madzia1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bio-box {
+    width: 50%;
+    height: 100%;
+}
+
+.bio-title {
+    color: red;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bio-text p {
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 20px;
+    letter-spacing: 1px;
+}
