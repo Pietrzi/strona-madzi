@@ -56,7 +56,16 @@
         </div>
     </div>
     <div id="gallery-section" class="section">
-        <h1>gal</h1>
+        <div class="slider-holder">
+            <div class="slideshow-container">
+                    <div class="img-holder"><img src="images/nowe1.jpg" alt="Madzia"></div>
+                    <div class="img-holder"><img src="images/nowe2.jpg" alt="Madzia"></div>
+                    <div class="img-holder"><img src="images/nowe3.jpg" alt="Madzia"></div>
+                    <div class="img-holder"><img src="images/nowe4.jpg" alt="Madzia"></div>
+                    <div class="img-holder"><img src="images/nowe5.jpg" alt="Madzia"></div>
+                    <div class="img-holder"><img src="images/nowe6.jpg" alt="Madzia"></div>
+            </div>
+        </div>
     </div>
     <div id="biography-section" class="section">
         <div class="bio-holder">
@@ -308,6 +317,17 @@
         src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slideshow-container').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+            });
+        });
+        
     </script>
     <script src="app.js"></script>
 </body>

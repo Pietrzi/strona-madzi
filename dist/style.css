@@ -148,6 +148,22 @@ h3 {
     width: 800px;
 }
 
+/* gallery */
+
+#gallery-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-holder {
+    height: 500px;
+    width: 900px;
+    display: none;
+}
+
 /* biography */
 
 #biography-section {
