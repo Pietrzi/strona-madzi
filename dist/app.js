@@ -24,7 +24,7 @@ const gallerySection = document.querySelector('#gallery-section');
 const biographySection = document.querySelector('#biography-section');
 const portfolioSection = document.querySelector('#portfolio-section');
 const contactSection = document.querySelector('#contact-section');
-const slider = document.querySelector('.slider-holder')
+// const slider = document.querySelector('.slider-holder')
 
 const goToHome = (e) => {
     homeSection.classList.add('display');
@@ -33,7 +33,7 @@ const goToHome = (e) => {
     biographySection.classList.remove('display');
     portfolioSection.classList.remove('display');
     contactSection.classList.remove('display');
-    slider.classList.remove('display');
+    // slider.classList.remove('display');
 
     homeButton.classList.add('red-active');
     demoButton.classList.remove('red-active');
@@ -50,7 +50,7 @@ const goToDemo = (e) => {
     biographySection.classList.remove('display');
     portfolioSection.classList.remove('display');
     contactSection.classList.remove('display');
-    slider.classList.remove('display');
+    // slider.classList.remove('display');
 
     demoButton.classList.add('red-active');
     homeButton.classList.remove('red-active');
@@ -67,7 +67,7 @@ const goToGallery = (e) => {
     biographySection.classList.remove('display');
     portfolioSection.classList.remove('display');
     contactSection.classList.remove('display');
-    slider.classList.add('display');
+    // slider.classList.add('display');
 
     galleryButton.classList.add('red-active');
     homeButton.classList.remove('red-active');
@@ -84,7 +84,7 @@ const goToBiography = (e) => {
     gallerySection.classList.remove('display');
     portfolioSection.classList.remove('display');
     contactSection.classList.remove('display');
-    slider.classList.remove('display');
+    // slider.classList.remove('display');
 
     biographyButton.classList.add('red-active');
     homeButton.classList.remove('red-active');
@@ -101,7 +101,7 @@ const goToPortfolio = (e) => {
     gallerySection.classList.remove('display');
     biographySection.classList.remove('display');
     contactSection.classList.remove('display');
-    slider.classList.remove('display');
+    // slider.classList.remove('display');
 
     portfolioButton.classList.add('red-active');
     homeButton.classList.remove('red-active');
@@ -118,7 +118,7 @@ const goToContact = (e) => {
     gallerySection.classList.remove('display');
     biographySection.classList.remove('display');
     portfolioSection.classList.remove('display');
-    slider.classList.remove('display');
+    // slider.classList.remove('display');
 
     contactButton.classList.add('red-active');
     homeButton.classList.remove('red-active');
