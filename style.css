@@ -170,21 +170,23 @@ h3 {
 
 .carousel-container {
     height: 500px;
-    width: 900px;
+    width: 800px;
     position: relative;
 }
 
 .carousel {
     position: relative;
     height: 100%;
-    width: 800px;
-    margin: 0 auto;
+    overflow: hidden;
+    /* width: 800px;
+    margin: 0 auto; */
 }
 
 .track {
     height: 100%;
     list-style-type: none;
     position: relative;
+    transition: transform 250ms ease-in;
 }
 
 .slide {
@@ -210,6 +212,8 @@ h3 {
     cursor: pointer;
     position: absolute;
     top: 45%;
+    left: -50px;
+    /* transform: translateY(-100%); */
 }
 
 .right-button {
@@ -221,7 +225,8 @@ h3 {
     cursor: pointer;
     position: absolute;
     top: 45%;
-    right: 0;
+    right: -50px;
+    /* transform: translateY(50px); */
 }
 
 /* biography */
