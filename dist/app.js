@@ -26,6 +26,16 @@ const portfolioSection = document.querySelector('#portfolio-section');
 const contactSection = document.querySelector('#contact-section');
 // const slider = document.querySelector('.slider-holder')
 
+const track = document.querySelector('.track');
+const nodeList = Array.from(track.children);
+const slides = [...nodeList];
+const prevButton = document.querySelector('.left-button')
+const nextButton = document.querySelector('.right-button')
+const slideWidth = 800;
+
+//console.log(slideWidth)
+
+
 const goToHome = (e) => {
     homeSection.classList.add('display');
     demoSection.classList.remove('display');
@@ -128,6 +138,17 @@ const goToContact = (e) => {
     portfolioButton.classList.remove('red-active');
 }
 
+
+const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px';
+}
+
+slides.forEach(setSlidePosition);
+
+
+
+
+
 homeButton.addEventListener('click', goToHome);
 demoButton.addEventListener('click', goToDemo);
 galleryButton.addEventListener('click', goToGallery);
@@ -135,6 +156,20 @@ biographyButton.addEventListener('click', goToBiography);
 portfolioButton.addEventListener('click', goToPortfolio);
 contactButton.addEventListener('click', goToContact);
 
+nextButton.addEventListener('click' , e => {
+    const currentSlide = track.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+    const amountToMove = nextSlide.style.left;
 
-// console.log('click')
+    track.style.transform = 'translateX(-' + amountToMove + ')';
+    currentSlide.classList.remove('current-slide');
+    nextSlide.classList.add('current-slide');
+})
+
+// const currentSlide = track.querySelector('.current-slide');
+
+
+
+
+console.log(currentSlide)
 // console.log(e.target)
