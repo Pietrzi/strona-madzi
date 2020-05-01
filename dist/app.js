@@ -145,8 +145,11 @@ const setSlidePosition = (slide, index) => {
 
 slides.forEach(setSlidePosition);
 
-
-
+const moveToslide = (track, currentSlide, targetSlide) => {
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    currentSlide.classList.remove('current-slide');
+    targetSlide.classList.add('current-slide');
+}
 
 
 homeButton.addEventListener('click', goToHome);
@@ -156,14 +159,20 @@ biographyButton.addEventListener('click', goToBiography);
 portfolioButton.addEventListener('click', goToPortfolio);
 contactButton.addEventListener('click', goToContact);
 
-nextButton.addEventListener('click' , e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
-    const amountToMove = nextSlide.style.left;
+prevButton.addEventListener('click' , e => {
+    const currentSlide = document.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling ? currentSlide.previousElementSibling : null;
+    if(prevSlide) {
+        moveToslide(track, currentSlide, prevSlide);
+    }
+})
 
-    track.style.transform = 'translateX(-' + amountToMove + ')';
-    currentSlide.classList.remove('current-slide');
-    nextSlide.classList.add('current-slide');
+nextButton.addEventListener('click' , e => {
+    const currentSlide = document.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling ? currentSlide.nextElementSibling : null;
+    if(nextSlide) {
+        moveToslide(track, currentSlide, nextSlide);
+    }
 })
 
 // const currentSlide = track.querySelector('.current-slide');
@@ -171,5 +180,5 @@ nextButton.addEventListener('click' , e => {
 
 
 
-console.log(currentSlide)
+// console.log(currentSlide)
 // console.log(e.target)
