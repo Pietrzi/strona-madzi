@@ -11,12 +11,12 @@ $(function() {
     });
 });
 
-const homeButton = document.querySelector('#home-button');
-const demoButton = document.querySelector('#demo-button');
-const galleryButton = document.querySelector('#gallery-button');
-const biographyButton = document.querySelector('#biography-button');
-const portfolioButton = document.querySelector('#portfolio-button');
-const contactButton = document.querySelector('#contact-button');
+const homeButton = document.querySelector('.home-button');
+const demoButton = document.querySelector('.demo-button');
+const galleryButton = document.querySelector('.gallery-button');
+const biographyButton = document.querySelector('.biography-button');
+const portfolioButton = document.querySelector('.portfolio-button');
+const contactButton = document.querySelector('.contact-button');
 
 const homeSection = document.querySelector('#home-section');
 const demoSection = document.querySelector('#demo-section');
@@ -24,17 +24,21 @@ const gallerySection = document.querySelector('#gallery-section');
 const biographySection = document.querySelector('#biography-section');
 const portfolioSection = document.querySelector('#portfolio-section');
 const contactSection = document.querySelector('#contact-section');
-// const slider = document.querySelector('.slider-holder')
 
 const track = document.querySelector('.track');
 const nodeList = Array.from(track.children);
 const slides = [...nodeList];
-const prevButton = document.querySelector('.left-button')
-const nextButton = document.querySelector('.right-button')
+const prevButton = document.querySelector('.left-button');
+const nextButton = document.querySelector('.right-button');
 const slideWidth = 800;
 
+const hamButton = document.querySelector('.toggle-button');
+const sideMenu = document.querySelector('.side-menu');
 //console.log(slideWidth)
 
+const openMenu = () => {
+    sideMenu.classList.toggle('open');
+}
 
 const goToHome = (e) => {
     homeSection.classList.add('display');
@@ -159,7 +163,7 @@ biographyButton.addEventListener('click', goToBiography);
 portfolioButton.addEventListener('click', goToPortfolio);
 contactButton.addEventListener('click', goToContact);
 
-prevButton.addEventListener('click' , e => {
+prevButton.addEventListener('click', e => {
     const currentSlide = document.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling ? currentSlide.previousElementSibling : null;
     if(prevSlide) {
@@ -167,13 +171,15 @@ prevButton.addEventListener('click' , e => {
     }
 })
 
-nextButton.addEventListener('click' , e => {
+nextButton.addEventListener('click', e => {
     const currentSlide = document.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling ? currentSlide.nextElementSibling : null;
     if(nextSlide) {
         moveToslide(track, currentSlide, nextSlide);
     }
 })
+
+hamButton.addEventListener('click', openMenu);
 
 // const currentSlide = track.querySelector('.current-slide');
 
