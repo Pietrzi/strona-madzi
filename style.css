@@ -41,6 +41,34 @@ ul {
     justify-content: space-between;
 }
 
+.button-container {
+    background: white;
+    padding: 7px;
+    display: none;
+}
+
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+    height: 24px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button-line {
+    width: 30px;
+    height: 3px;
+    background: black;
+}
+
 li {
     text-transform: uppercase;
     font-weight: 300;
@@ -97,6 +125,7 @@ li:hover {
 #home-section {
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
 
 .home-content {
@@ -120,9 +149,13 @@ li:hover {
 }
 
 h3 {
+    position: absolute;
+    bottom: 60px;
+    left: 5%;
     color: red;
     font-size: 24px;
     letter-spacing: 2px;
+    z-index: 2;
 }
 
 .video-container {
@@ -135,19 +168,13 @@ h3 {
 }
 
 .home-video {
-    /* position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translateX(calc((100% - 100vw) / 2)); */
-    min-width: 100%;
+    min-width: 120%;
     min-height: 100%;
     object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-60%, -50%);
+    transform: translate(-55%, -50%);
 }
 
 /* demo */
@@ -384,4 +411,66 @@ h3 {
 .contact-info p {
     font-size: 30px;
     text-align: center;
+}
+
+
+/* media */
+
+@media(max-width: 900px) {
+    .nav-center {
+        flex-direction: row-reverse;
+    }
+
+    .button-container {
+        display: block;
+    }
+
+    .menu-holder {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    .home-content {
+        top: 100px;
+        width: 95%;
+    }
+
+    .home-title {
+        text-align: end;
+        font-size: 44px;
+    }
+
+    h3 {
+        width: 95%;
+        text-align: center;
+        font-size: 17px;
+        letter-spacing: 1px;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .button-container {
+        padding: 5px;
+    }
+
+    .toggle-button {
+        height: 20px;
+        width: 25px;
+    }
+
+    .toggle-button-line {
+        width: 25px;
+    }
+
+    .facebook {
+        width: 35px;
+        height: 35px;
+    }
+
+    .instagram {
+        width: 35px;
+        height: 35px;
+    }
 }
