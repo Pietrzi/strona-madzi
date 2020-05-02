@@ -35,7 +35,7 @@ body {
     align-items: center;
 }
 
-ul {
+.menu-holder ul {
     list-style-type: none;
     width: 550px;
     display: flex;
@@ -70,7 +70,7 @@ ul {
     background: black;
 }
 
-li {
+.menu-holder ul li {
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
@@ -138,6 +138,8 @@ li:hover {
     font-size: 18px;
     width: 100%;
     padding: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
     display: flex;
     justify-content: center;
     align-items: center;

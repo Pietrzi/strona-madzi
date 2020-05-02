@@ -11,12 +11,12 @@ $(function() {
     });
 });
 
-const homeButton = document.querySelector('.home-button');
-const demoButton = document.querySelector('.demo-button');
-const galleryButton = document.querySelector('.gallery-button');
-const biographyButton = document.querySelector('.biography-button');
-const portfolioButton = document.querySelector('.portfolio-button');
-const contactButton = document.querySelector('.contact-button');
+const homeButton = document.querySelector('#home-button');
+const demoButton = document.querySelector('#demo-button');
+const galleryButton = document.querySelector('#gallery-button');
+const biographyButton = document.querySelector('#biography-button');
+const portfolioButton = document.querySelector('#portfolio-button');
+const contactButton = document.querySelector('#contact-button');
 
 const homeSection = document.querySelector('#home-section');
 const demoSection = document.querySelector('#demo-section');
@@ -34,7 +34,14 @@ const slideWidth = 800;
 
 const hamButton = document.querySelector('.toggle-button');
 const sideMenu = document.querySelector('.side-menu');
-//console.log(slideWidth)
+
+const sideHomeButton = document.querySelector('#side-home-button');
+const sideDemoButton = document.querySelector('#side-demo-button');
+const sideGalleryButton = document.querySelector('#side-gallery-button');
+const sideBiographyButton = document.querySelector('#side-biography-button');
+const sidePortfolioButton = document.querySelector('#side-portfolio-button');
+const sideContactButton = document.querySelector('#side-contact-button');
+//console.log('click')
 
 const openMenu = () => {
     sideMenu.classList.toggle('open');
@@ -55,6 +62,16 @@ const goToHome = (e) => {
     biographyButton.classList.remove('red-active');
     portfolioButton.classList.remove('red-active');
     contactButton.classList.remove('red-active');
+
+    sideHomeButton.classList.add('red-active');
+    sideDemoButton.classList.remove('red-active');
+    sideGalleryButton.classList.remove('red-active');
+    sideBiographyButton.classList.remove('red-active');
+    sidePortfolioButton.classList.remove('red-active');
+    sideContactButton.classList.remove('red-active');
+
+    sideMenu.classList.remove('open');
+    // console.log('click')
 }
 
 const goToDemo = (e) => {
@@ -72,6 +89,16 @@ const goToDemo = (e) => {
     biographyButton.classList.remove('red-active');
     portfolioButton.classList.remove('red-active');
     contactButton.classList.remove('red-active');
+
+    sideDemoButton.classList.add('red-active');
+    sideHomeButton.classList.remove('red-active');
+    sideGalleryButton.classList.remove('red-active');
+    sideBiographyButton.classList.remove('red-active');
+    sidePortfolioButton.classList.remove('red-active');
+    sideContactButton.classList.remove('red-active');
+
+    sideMenu.classList.remove('open');
+    // console.log('click')
 }
 
 const goToGallery = (e) => {
@@ -89,6 +116,16 @@ const goToGallery = (e) => {
     biographyButton.classList.remove('red-active');
     portfolioButton.classList.remove('red-active');
     contactButton.classList.remove('red-active');
+
+    sideGalleryButton.classList.add('red-active');
+    sideHomeButton.classList.remove('red-active');
+    sideDemoButton.classList.remove('red-active');
+    sideBiographyButton.classList.remove('red-active');
+    sidePortfolioButton.classList.remove('red-active');
+    sideContactButton.classList.remove('red-active');
+
+    sideMenu.classList.remove('open');
+    // console.log('click')
 }
 
 const goToBiography = (e) => {
@@ -106,6 +143,16 @@ const goToBiography = (e) => {
     galleryButton.classList.remove('red-active');
     portfolioButton.classList.remove('red-active');
     contactButton.classList.remove('red-active');
+
+    sideBiographyButton.classList.add('red-active');
+    sideHomeButton.classList.remove('red-active');
+    sideDemoButton.classList.remove('red-active');
+    sideGalleryButton.classList.remove('red-active');
+    sidePortfolioButton.classList.remove('red-active');
+    sideContactButton.classList.remove('red-active');
+
+    sideMenu.classList.remove('open');
+    // console.log('click')
 }
 
 const goToPortfolio = (e) => {
@@ -123,6 +170,15 @@ const goToPortfolio = (e) => {
     galleryButton.classList.remove('red-active');
     biographyButton.classList.remove('red-active');
     contactButton.classList.remove('red-active');
+
+    sidePortfolioButton.classList.add('red-active');
+    sideHomeButton.classList.remove('red-active');
+    sideDemoButton.classList.remove('red-active');
+    sideGalleryButton.classList.remove('red-active');
+    sideBiographyButton.classList.remove('red-active');
+    sideContactButton.classList.remove('red-active');
+
+    sideMenu.classList.remove('open');
 }
 
 const goToContact = (e) => {
@@ -140,6 +196,15 @@ const goToContact = (e) => {
     galleryButton.classList.remove('red-active');
     biographyButton.classList.remove('red-active');
     portfolioButton.classList.remove('red-active');
+
+    sideContactButton.classList.add('red-active');
+    sideHomeButton.classList.remove('red-active');
+    sideDemoButton.classList.remove('red-active');
+    sideGalleryButton.classList.remove('red-active');
+    sideBiographyButton.classList.remove('red-active');
+    sidePortfolioButton.classList.remove('red-active');
+
+    sideMenu.classList.remove('open');
 }
 
 
@@ -162,6 +227,13 @@ galleryButton.addEventListener('click', goToGallery);
 biographyButton.addEventListener('click', goToBiography);
 portfolioButton.addEventListener('click', goToPortfolio);
 contactButton.addEventListener('click', goToContact);
+
+sideHomeButton.addEventListener('click', goToHome);
+sideDemoButton.addEventListener('click', goToDemo);
+sideGalleryButton.addEventListener('click', goToGallery);
+sideBiographyButton.addEventListener('click', goToBiography);
+sidePortfolioButton.addEventListener('click', goToPortfolio);
+sideContactButton.addEventListener('click', goToContact);
 
 prevButton.addEventListener('click', e => {
     const currentSlide = document.querySelector('.current-slide');
