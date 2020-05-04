@@ -11,6 +11,24 @@ $(function() {
     });
 });
 
+let slideWidth;
+
+let width = $(window).width();
+$(window).on('resize', function() {
+  if ($(this).width() !== width) {
+    width = $(this).width();
+    if(width < 700) {
+        slideWidth = 320;
+    } else if (width >= 700 && width < 900) {
+        slideWidth = 600;
+    } else {
+        slideWidth = 800;
+    }
+  }
+});
+
+
+
 const homeButton = document.querySelector('#home-button');
 const demoButton = document.querySelector('#demo-button');
 const galleryButton = document.querySelector('#gallery-button');
@@ -30,7 +48,15 @@ const nodeList = Array.from(track.children);
 const slides = [...nodeList];
 const prevButton = document.querySelector('.left-button');
 const nextButton = document.querySelector('.right-button');
-const slideWidth = 800;
+
+
+if(window.innerWidth < 700) {
+    slideWidth = 320;
+} else if (window.innerWidth >= 700 && window.innerWidth < 900) {
+    slideWidth = 600;
+} else {
+    slideWidth = 800;
+}
 
 const hamButton = document.querySelector('.toggle-button');
 const sideMenu = document.querySelector('.side-menu');
@@ -258,5 +284,5 @@ hamButton.addEventListener('click', openMenu);
 
 
 
-// console.log(currentSlide)
+//console.log(window.innerWidth)
 // console.log(e.target)
