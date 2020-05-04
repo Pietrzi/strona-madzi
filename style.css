@@ -463,6 +463,28 @@ h3 {
     .menu-holder {
         display: none;
     }
+
+    .demo-video {
+         width: 600px;
+    }
+
+    .carousel-container {
+        width: 600px;
+        height: 375px;
+    }
+
+    .slide {
+        width: 600px;
+        height: 375px;
+    }
+
+    .left-button {
+        left: -40px;
+    }
+
+    .right-button {
+        right: -40px;
+    }
 }
 
 @media(max-width: 700px) {
@@ -519,5 +541,32 @@ h3 {
     .instagram {
         width: 35px;
         height: 35px;
+    }
+
+    .demo-video {
+        width: 320px
+    }
+
+    .carousel-container {
+        width: 320px;
+        height: 190px;
+    }
+
+    .slide {
+        width: 320px;
+        height: 190px;
+    }
+
+    .left-button {
+        width: 25px;
+        height: 25px;
+        left: 0px;
+        z-index: 100;
+    }
+
+    .right-button {
+        width: 25px;
+        height: 25px;
+        right: 0;
     }
 }
