@@ -166,10 +166,9 @@ li:hover {
 }
 
 .home-content {
-    position: relative;
-    top: 150px;
-    width: 90%;
-    margin: 0 auto;
+    position: absolute;
+    bottom: 80px;
+    left: 5%;
     z-index: 2;
 }
 
