@@ -166,10 +166,9 @@ li:hover {
 }
 
 .home-content {
-    position: relative;
-    top: 150px;
-    width: 90%;
-    margin: 0 auto;
+    position: absolute;
+    bottom: 80px;
+    left: 5%;
     z-index: 2;
 }
 
@@ -332,7 +331,7 @@ h3 {
 .bio-holder {
     width: 950px;
     height: 600px;
-    margin: 100px auto 0;
+    margin: 150px auto 0;
     display: flex;
 }
 
@@ -342,12 +341,12 @@ h3 {
 }
 
 .portrait {
-    width: 90%;
-    height: 70%;
-    margin: 20px auto;
+    width: 95%;
+    height: 95%;
+    margin: 5px auto;
     background-image: url('./images/magdabio.jpg');
     background-size: cover;
-    background-position-y: -10px;
+    background-position-y: -20px;
 }
 
 .bio-box {
