@@ -346,7 +346,7 @@ h3 {
     margin: 5px auto;
     background-image: url('./images/magdabio.jpg');
     background-size: cover;
-    background-position-y: -20px;
+    background-position-y: 0px;
 }
 
 .bio-box {
@@ -511,6 +511,11 @@ h3 {
 
     .bio-holder {
         width: 650px;
+    }
+
+    .portrait {
+        background-position-y: 0px;
+        background-position-x: -50px;
     }
 
     .bio-title {
