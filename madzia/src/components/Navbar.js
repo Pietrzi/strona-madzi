@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
     return (
@@ -14,22 +15,22 @@ export default function Navbar() {
                 <div class="menu-holder">
                     <ul>
                         <li id="home-button" class="red-active">
-                            home
+                            <NavLink exact to='/'>home</NavLink>
                         </li>
                         <li id="demo-button">
-                            demo
+                            <NavLink to='/demo'>demo</NavLink>
                         </li>
                         <li id="gallery-button">
-                            galeria
+                            <NavLink to='/gallery'>galeria</NavLink>
                         </li>
                         <li id="biography-button">
-                            biografia
+                            <NavLink to='/biography'>biografia</NavLink>
                         </li>
                         <li id="portfolio-button">
-                            portfolio
+                            <NavLink to='/portfolio'>portfolio</NavLink>
                         </li>
                         <li id="contact-button">
-                            kontakt
+                            <NavLink to='/contact'>kontakt</NavLink>
                         </li>
                     </ul>
                 </div>

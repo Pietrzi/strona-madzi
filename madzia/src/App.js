@@ -10,22 +10,25 @@ import Gallery from './components/Gallery';
 import Biography from './components/Biography';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import SideMenu from './components/SideMenu';
+import Backdrop from './components/Backdrop';
 
 function App() {
   return (
+    <>
     <BrowserRouter>
       <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/demo' component={Demo} />
-        <Home />
-        <Demo />
-        <Gallery />
-        <Biography />
-        <Portfolio />
-        <Contact />
+        <Route path='/gallery' component={Gallery} />
+        <Route path='/biography' component={Biography} />
+        <Route path='/portfolio' component={Portfolio} />
+        <Route path='/contact' component={Contact} />
       </Switch>
     </BrowserRouter>
+    <Backdrop />
+    </>
   );
 }
 
