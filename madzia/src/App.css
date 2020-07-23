@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: white;
   font-family: 'Overpass', sans-serif;
   position: relative;
 }
@@ -94,7 +94,7 @@ li:hover {
   bottom: 2px;
   width: 40px;
   height: 40px;
-  background-image: url('./images/facebook-new.png');
+  background-image: url('./assets/facebook-new.png');
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -103,7 +103,7 @@ li:hover {
 .instagram {
   width: 40px;
   height: 40px;
-  background-image: url('./images/instagram-new.png');
+  background-image: url('./assets/instagram-new.png');
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -220,7 +220,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./images/telko.jpg');
+  background-image: url('./assets/telko.jpg');
   background-size: cover;
   background-position-x: -220px;
   background-repeat: no-repeat;
@@ -298,7 +298,7 @@ h3 {
 .left-button {
   width: 40px;
   height: 40px;
-  background-image: url('./images/left.png');
+  background-image: url('./assets/left.png');
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -311,7 +311,7 @@ h3 {
 .right-button {
   width: 40px;
   height: 40px;
-  background-image: url('./images/right.png');
+  background-image: url('./assets/right.png');
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -344,7 +344,7 @@ h3 {
   width: 95%;
   height: 95%;
   margin: 5px auto;
-  background-image: url('./images/magdabio.jpg');
+  background-image: url('./assets/magdabio.jpg');
   background-size: cover;
   background-position-y: 0px;
 }

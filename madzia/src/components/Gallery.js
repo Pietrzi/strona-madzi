@@ -3,48 +3,48 @@ import React from 'react'
 export default function Gallery() {
     return (
         <div>
-           <div id="gallery-section" class="section">
-            <div class="gallery-wrapper">
-                <div class="carousel-container">
-                    <div class="left-button"></div>
-                        <div class="carousel">
-                            <ul class="track">
-                                <li class="slide  current-slide">
-                                    <img src="images/i.jpg" class="slide-image" alt="Madzia">
+           <div id="gallery-section" className="section">
+            <div className="gallery-wrapper">
+                <div className="carousel-container">
+                    <div className="left-button"></div>
+                        <div className="carousel">
+                            <ul className="track">
+                                <li className="slide  current-slide">
+                                    <img src="assets/i.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
-                                <li class="slide">
-                                    <img src="images/j.jpg" class="slide-image" alt="Madzia">
+                                <li className="slide">
+                                    <img src="assets/j.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
-                                <li class="slide">
-                                    <img src="images/g.jpg" class="slide-image" alt="Madzia">
+                                <li className="slide">
+                                    <img src="assets/g.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
-                                <li class="slide">
-                                    <img src="images/h.jpg" class="slide-image" alt="Madzia">
+                                <li className="slide">
+                                    <img src="assets/h.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
-                                <li class="slide">
-                                    <img src="images/c.jpg" class="slide-image" alt="Madzia">
+                                <li className="slide">
+                                    <img src="assets/c.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
-                                <li class="slide">
-                                    <img src="images/d.jpg" class="slide-image" alt="Madzia">
+                                <li className="slide">
+                                    <img src="assets/d.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
-                                <li class="slide">
-                                    <img src="images/e.jpg" class="slide-image" alt="Madzia">
+                                <li className="slide">
+                                    <img src="assets/e.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
-                                <li class="slide">
-                                    <img src="images/k.jpg" class="slide-image" alt="Madzia">
+                                <li className="slide">
+                                    <img src="assets/k.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
-                                <li class="slide">
-                                    <img src="images/f.jpg" class="slide-image" alt="Madzia">
+                                <li className="slide">
+                                    <img src="assets/f.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
-                                <li class="slide">
-                                    <img src="images/a.jpg" class="slide-image" alt="Madzia">
+                                <li className="slide">
+                                    <img src="assets/a.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
-                                <li class="slide">
-                                    <img src="images/b.jpg" class="slide-image" alt="Madzia">
+                                <li className="slide">
+                                    <img src="assets/b.jpg" className="slide-image" alt="Madzia"/>
                                 </li>
                             </ul>
                         </div>
-                    <div class="right-button"></div>
+                    <div className="right-button"></div>
                 </div>
             </div>
         </div> 

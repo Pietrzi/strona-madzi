@@ -3,18 +3,18 @@ import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
     return (
-        <nav class="nav">
-            <div class="nav-center">
-                <div class="button-container">
-                    <button class="toggle-button">
-                        <div class="toggle-button-line"></div>
-                        <div class="toggle-button-line"></div>
-                        <div class="toggle-button-line"></div>
+        <nav className="nav">
+            <div className="nav-center">
+                <div className="button-container">
+                    <button className="toggle-button">
+                        <div className="toggle-button-line"></div>
+                        <div className="toggle-button-line"></div>
+                        <div className="toggle-button-line"></div>
                     </button>
                 </div>
-                <div class="menu-holder">
+                <div className="menu-holder">
                     <ul>
-                        <li id="home-button" class="red-active">
+                        <li id="home-button" className="red-active">
                             <NavLink exact to='/'>home</NavLink>
                         </li>
                         <li id="demo-button">
@@ -34,9 +34,9 @@ export default function Navbar() {
                         </li>
                     </ul>
                 </div>
-                <div class="social-holder">
-                    <a href="https://www.facebook.com/magda.majtyka.18" target="_blank"><div class="facebook"></div></a>
-                    <a href="https://www.instagram.com/majtykamagda/?hl=pl" target="_blank"><div class="instagram"></div></a>
+                <div className="social-holder">
+                    <a href="https://www.facebook.com/magda.majtyka.18" target="_blank"><div className="facebook"></div></a>
+                    <a href="https://www.instagram.com/majtykamagda/?hl=pl" target="_blank"><div className="instagram"></div></a>
                 </div>
             </div>
         </nav>

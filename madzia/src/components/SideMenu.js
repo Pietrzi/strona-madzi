@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function SideMenu() {
     return (
-        <div class="side-menu">
+        <div className="side-menu">
         <ul>
-            <li id="side-home-button" class="red-active">
+            <li id="side-home-button" className="red-active">
                 home
             </li>
             <li id="side-demo-button">
