@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magda Majtyka</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-center">
+            <div class="button-container">
+                <button class="toggle-button">
+                    <div class="toggle-button-line"></div>
+                    <div class="toggle-button-line"></div>
+                    <div class="toggle-button-line"></div>
+                </button>
+            </div>
+            <div class="menu-holder">
+                <ul>
+                    <li id="home-button" class="red-active">
+                        home
+                    </li>
+                    <li id="demo-button">
+                        demo
+                    </li>
+                    <li id="gallery-button">
+                        galeria
+                    </li>
+                    <li id="biography-button">
+                        biografia
+                    </li>
+                    <li id="portfolio-button">
+                        portfolio
+                    </li>
+                    <li id="contact-button">
+                        kontakt
+                    </li>
+                </ul>
+            </div>
+            <div class="social-holder">
+                <a href="https://www.facebook.com/magda.majtyka.18" target="_blank"><div class="facebook"></div></a>
+                <a href="https://www.instagram.com/majtykamagda/?hl=pl" target="_blank"><div class="instagram"></div></a>
+            </div>
+        </div>
+    </nav>
+    <div class="side-menu">
+        <ul>
+            <li id="side-home-button" class="red-active">
+                home
+            </li>
+            <li id="side-demo-button">
+                demo
+            </li>
+            <li id="side-gallery-button">
+                galeria
+            </li>
+            <li id="side-biography-button">
+                biografia
+            </li>
+            <li id="side-portfolio-button">
+                portfolio
+            </li>
+            <li id="side-contact-button">
+                kontakt
+            </li>
+        </ul>
+    </div>
+    <div id="home-section" class=" section display">
+        <div class="home-content">
+            <div class="home-title ">Magda</div>
+            <div class="home-title surname">Majtyka</div>
+        </div>
+        <h3>[ Aktorka & Tancerka & Choreograf ]</h3>
+        <div class="video-container">
+            <video src="images/wwwma.mp4" autoPlay={true} loop={true} muted class="home-video"></video>
+        </div>
+        <div class="picture-holder"></div>
+    </div>
+    <div id="demo-section" class="section">
+        <div class="video-holder">
+            <video src="images/www2.mp4" controls class="demo-video"></video>
+        </div>
+    </div>
+    <div id="gallery-section" class="section">
+        <div class="gallery-wrapper">
+            <div class="carousel-container">
+                <div class="left-button"></div>
+                    <div class="carousel">
+                        <ul class="track">
+                            <li class="slide  current-slide">
+                                <a href="images/i.jpg" download><img src="images/i.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                            <li class="slide">
+                                <a href="images/j.jpg" download="myimage2"><img src="images/j.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                            <li class="slide">
+                                <a href="images/k.jpg" download="myimage3"><img src="images/g.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                            <li class="slide">
+                                <a href="images/h.jpg" download="myimage4"><img src="images/h.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                            <li class="slide">
+                                <a href="images/c.jpg" download="myimage5"><img src="images/c.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                            <li class="slide">
+                                <a href="images/d.jpg" download="myimage6"><img src="images/d.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                            <li class="slide">
+                                <a href="images/e.jpg" download="myimage7"><img src="images/e.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                            <li class="slide">
+                                <a href="images/k.jpg" download="myimage8"><img src="images/k.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                            <li class="slide">
+                                <a href="images/f.jpg" download="myimage9"><img src="images/f.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                            <li class="slide">
+                                <a href="images/a.jpg" download="myimage10"><img src="images/a.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                            <li class="slide">
+                                <a href="images/b.jpg" download="myimage11"><img src="images/b.jpg" class="slide-image" alt="Madzia"></a>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="right-button"></div>
+            </div>
+        </div>
+    </div>
+    <div id="biography-section" class="section">
+        <div class="bio-holder">
+            <div class="bio-picture">
+                <div class="portrait"></div>
+            </div>
+            <div class="bio-box">
+                <div class="bio-title">Magda Majtyka</div>
+                <div class="bio-text">
+                    <p>Debiutowała w spektaklu "Dreams" reżyserowanym przez Juliana Hasieja, współpracując ze znaną w świecie akrobatyki i tańca Fundacją Wspierania Ruchu OCELOT. Ood 2008 roku występuje w Teatrze Muzycznym CAPITOL we Wrocławiu, dzięki temu oprócz grania w spektaklach, miała przyjemność brać udział w wybitnych koncertach Przeglądu Piosenki Aktorskiej, reżyserowanych między innymi przez Wojciecha Kościelniaka, Cezarego Studniaka.</p>
+                    <p>Jest Miłośniczką klimatu retro, przede wszystkim klimatu lat XX, dlatego od 2013 roku występuje na Festiwalach Retro w Częstochowie. Praca z takimi artystami jak, Jan Nowicki, Marian Opania, Katarzyna Skrzynecka, Katarzyna Pakosińska, Marika, Mariusz Kiljan, Czesław Mozil, Ania Rusowicz jest dla niej bardzo rozwijająca i w 2018 roku zdecydowała się zostać realizatorem festiwalu jako choreograf.</p>
+                    <p>Zainteresowanie filmem zaczęło się w 2012 roku od współpracy ze Studiem Filmowym MANIFIESTA we Wrocławiu, w którym doskonali swój warsztat aktorski pod okiem Bartka Bartosa, Piotra Bartosa i Tomka Tryzny.</p>
+                    <p>Obecnie pracuje w Teatrze Polskim we Wrocławiu oraz w Teatrze Małego Widza we Wrocławiu, w którym każdego dnia łączy umiejętności i wieloletnie doświadczenie w pracy jako aktorka, choreograf i tancerka.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio-section" class="section">
+        <div class="portfolio-holder">
+            <div class="portfolio-title">teatr</div>
+            <div class="portfolio-pieces">
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">księgi schulza</div>
+                        <div class="piece-box">
+                            <p>Teatr Poslki we Wrocławiu</p>
+                            <p>reż. Jan Szurmiej</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">blaszany bębenek</div>
+                        <div class="piece-box">
+                            <p>Teatr Muzyczny Capitol we Wrocławiu</p>
+                            <p>reż. Wojciech Kościelniak</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">tak jest</div>
+                        <div class="piece-box">
+                            <p>PPA 2012</p>
+                            <p>reż. Wojciech Kościelniak</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">hair</div>
+                        <div class="piece-box">
+                            <p>Teatr Muzyczny Capitol we Wrocławiu</p>
+                            <p>reż. Konrad Imiela</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">a chorus line</div>
+                        <div class="piece-box">
+                            <p>Teatr Muzyczny Capitol we Wrocławiu</p>
+                            <p>reż. Michael Bennet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">festiwal sacrum profanum</div>
+                        <div class="piece-box">
+                            <p>Koncert</p>
+                            <p>reż. Konrad Imiela</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">muzykanty wielkiego pola</div>
+                        <div class="piece-box">
+                            <p>PPA 2008</p>
+                            <p>reż. Cezary Studniak</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">c-aktiv</div>
+                        <div class="piece-box">
+                            <p>Teatr Muzyczny Capitol we Wrocławiu</p>
+                            <p>reż. Konrad Imiela</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">śmierdź w górach</div>
+                        <div class="piece-box">
+                            <p>Teatr Muzyczny Capitol we Wrocławiu</p>
+                            <p>reż. Konrad Imiela i Cezary Studniak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-title">film</div>
+            <div class="portfolio-pieces">
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">ach gdyby tak błądzę</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                            <p>reż. Piotr Bartos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">kler</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                            <p>reż. Wojciech Smarzowski</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">kabaret śmierci</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                            <p>fabularyzowany dokument</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-title">serial</div>
+            <div class="portfolio-pieces">
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">komisarz alex</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">oko za oko</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">barwy szczęścia</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">na dobre i na złe</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">sprawieldliwy wydział<br/>kryminalny</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">bodo</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">świat według kiepskich</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">tancerze</div>
+                        <div class="piece-box">
+                            <p>obsada aktorska</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-title">choreografia</div>
+            <div class="portfolio-pieces">
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">filadelfijska opowieść</div>
+                        <div class="piece-box">
+                            <p>Teatr Poslki we Wrocławiu</p>
+                            <p>reż. Stanisław Melski</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">dla pani wszystko</div>
+                        <div class="piece-box">
+                            <p>koncert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">w dobrym tonie z zulą pogorzelską</div>
+                        <div class="piece-box">
+                            <p>koncert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-section">
+                    <div class="portfolio-piece">
+                        <div class="piece-title">festiwal retro częstochowa</div>
+                        <div class="piece-box">
+                            <p>koncert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-section" class="section">
+        <div class="contact-box">
+            <div class="contact-name">Magda Majtyka</div>
+            <div class="contact-info">
+                <p>Email: magda.majtyka@gmail.com</p>
+                <p>Tel: 694-328-957</p>
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
